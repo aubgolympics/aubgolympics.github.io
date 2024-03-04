@@ -1,0 +1,159 @@
+body {
+    background-color: var(--backgroundColor);
+    overflow-x: hidden;
+    font-family: "Luckiest Guy", cursive;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-size: 4vw;
+}
+
+/* .h1{
+    text-shadow: 10px 10px 1px black;
+}
+
+h2{
+    text-shadow: 10px 10px 1px black;
+} */
+
+iframe {
+    width: 50%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.contacts {
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    height: 100% !important;
+}
+
+@media screen and (max-width:1000px) {
+    .contacts {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 3.5vw !important;
+    }
+
+    button {
+        font-size: 4vw !important;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 3em !important;
+    }
+}
+
+.form {
+    background-color: var(--accentColor);
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 2vw 0;
+    padding: 2vw 0;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.field {
+    width: 90%;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    height: 4vw;
+}
+
+input {
+    width: 100%;
+    min-height: 30px;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 15vw;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: var(--textColor);
+    border: 0.5px solid var(--secondaryColor);
+    padding: 2px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0;
+    background-color: var(--secondaryColor);
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+.email {
+    color: var(--primaryColor);
+    /* text-shadow: 10px 10px 1px black; */
+}
+
+p {
+    color: var(--primaryColor);
+    font-size: 1.5vw;
+}
+
+.error {
+    color: red;
+}
+
+@media only screen and (max-width : 992px) {
+    .info {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .contacts {
+        font-size: 4vw;
+    }
+}
