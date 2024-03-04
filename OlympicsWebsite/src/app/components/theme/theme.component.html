@@ -1,8 +1,0 @@
-<div class="dropdown">
-    <button class="dropdown-button" (click)="toggleDropdown()">Theme</button>
-    <div class="dropdown-content" *ngIf="isDropdownOpen">
-      <a class="item" (click)="selectedTheme($event, 'light')" [ngClass]="selectedTraditional ? 'theme-selected': ''">Traditional</a>
-      <a class="item" (click)="selectedTheme($event, 'dark')" [ngClass]="selectedReversed ? 'theme-selected': ''">Reversed</a>
-      <a class="item" (click)="selectedTheme($event, 'dday')" [ngClass]="selectedDDay ? 'theme-selected': ''">D-Day</a>
-    </div>
-  </div>
